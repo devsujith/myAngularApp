@@ -1,0 +1,47 @@
+<br>
+         <form (ngSubmit)="readValues(myData)" #myData="ngForm"> <!-- local reference #myData -->
+            <div class="form-group row">
+              <div class="col-sm-2 col-form-label">Course Title</div>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="courseTitle" placeholder="Course title" ngModel>
+              </div>
+            </div>
+            <div class="form-group row">
+                    <div class="col-sm-2 col-form-label">Course Description</div>
+                    <div class="col-sm-10">
+                    <textarea class = "form-control" cols="30" rows="5" name="courseDescription" ngModel></textarea>
+                    </div>
+            </div>
+            <div class="form-group row">
+                    <div class="col-sm-2 col-form-label">Course Duration</div>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" placeholder="Course duration" name="courseDuration" ngModel>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                        <div class="col-sm-2 col-form-label">Venue</div>
+                        <div class="col-sm-10">
+                          <input type="text" required class="form-control" placeholder="Venue" name="courseVenue" ngModel>
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                            <div class="col-sm-2 col-form-label">Date</div>
+                            <div class="col-sm-10">
+                              <input type="date" required class="form-control" name="courseDate" ngModel>
+                            </div>
+                          </div>
+          
+           
+            <div class="form-group row">
+                    <div class="col-sm-4 col-form-label"></div>
+                    <div class="col-sm-4 col-form-label">
+                    <button type="submit" class="btn btn-primary btn-block" >SUBMIT</button>
+                </div>
+                
+            </div>
+ </form>
+    
+
+
+

@@ -1,0 +1,23 @@
+<!-- <p>view-course works!{{courseData}} </p> -->
+
+<p *ngIf="isLoading else displayData">Loading Data from server...</p>
+<!-- <p *ngIf="courseData.length == 0 else displayData">Loading Data from server...</p> -->
+<ng-template #displayData>
+<div class="table">
+    <tr>
+        <th>Course Title</th>
+        <th>Course Description</th> 
+        <th>Course Duration</th>
+        <th>Course venue</th>
+        <th>Course Date</th>
+    </tr>
+
+    <tr *ngFor="let data of courseData">
+        <td> {{data.courseTitle}} </td>
+        <td> {{data.courseDescription}} </td>
+        <td> {{data.courseDuration}} </td>
+        <td> {{data.courseVenue}} </td>
+        <td> {{data.courseDate}} </td>
+    </tr>
+</div>
+</ng-template>

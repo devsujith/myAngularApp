@@ -1,0 +1,10 @@
+<input type="text" [(ngModel)]="course">
+<h1>Welcome {{name}}. </h1> 
+<h2>Thank you for joining {{course}}.</h2>
+
+<!-- property binding example -->
+
+<button [disabled]="!buttonActive"  (click)="changeCourseName()" >Apply for the course</button>
+<br>
+<br>
+<button (click)="counterFunction()">Counter</button> <p>{{count}}</p> 
